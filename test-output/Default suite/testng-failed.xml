@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="day5week2pageobjetmodel.TC001_DuplicateLead">
+        <methods>
+          <include name="stopSuite"/>
+          <include name="startSuite"/>
+          <include name="login"/>
+          <include name="startTest"/>
+          <include name="setValues"/>
+          <include name="duplicatelead"/>
+          <include name="close"/>
+        </methods>
+      </class> <!-- day5week2pageobjetmodel.TC001_DuplicateLead -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
