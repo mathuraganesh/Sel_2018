@@ -7,7 +7,7 @@ public class LearningArray {
 	
 		public static void main(String[] args) {
 			
-			String[] studentList= {"mahesh","Ganesh","Suresh"};
+			String[] studentList= {"mahesh","Divya","Suresh"};  //Comment by ganesh
 			int[] ageList= {23,25,27};
 			char[][] gradesList= {{'A','B','C','D','E','F'},{'B','B','B','B','B','B'},{'F','F','F','F','F','F'}};
 			Scanner scr=new Scanner(System.in);
