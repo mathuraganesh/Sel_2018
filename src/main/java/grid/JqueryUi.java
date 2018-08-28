@@ -23,7 +23,7 @@ public class JqueryUi {
 		dc.setPlatform(Platform.WINDOWS);
 		
 		RemoteWebDriver driver = new RemoteWebDriver(
-				new URL("http://10.0.0.99:4444/wd/hub"), dc);
+				new URL("http://192.168.0.102:4444/wd/hub"), dc);
 		
 		//Load the URL
 		driver.get("http://jqueryui.com/draggable/");

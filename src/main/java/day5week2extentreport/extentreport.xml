@@ -6,10 +6,10 @@
 	<parameter name="password" value="crmsfa"></parameter>
   <test thread-count="5" name="Test">
     <classes>
-    <class name="day5week2extentreport.CreateLead"/>  
+   <!--  <class name="day5week2extentreport.CreateLead"/>  
      <class name="day5week2extentreport.EditLead"/>
      <class name="day5week2extentreport.DeleteLead"/>
-     <class name="day5week2extentreport.DuplicateLead"/>
+     <class name="day5week2extentreport.DuplicateLead"/>   -->
      <class name="day5week2extentreport.MergeLead"/>
     </classes>
   </test> <!-- Test -->

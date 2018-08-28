@@ -69,7 +69,7 @@ public class SeMethods extends ReporterMethod implements WdMethods {
 
 	public void click(WebElement ele) {
 	ele.click();
-	System.out.println("The Element "+ele+" is clicked Successfully");
+	//System.out.println("The Element "+ele+" is clicked Successfully");
 	//takeSnap();		
 	}
 	
@@ -192,10 +192,14 @@ public class SeMethods extends ReporterMethod implements WdMethods {
 	}
 
 	public void switchToWindow(int index) {
-		Set<String> sGetWindow=driver.getWindowHandles();
+		Set<String> windowHandles = driver.getWindowHandles();
+		List<String> list = new ArrayList<String>();
+		list.addAll(windowHandles);
+		driver.switchTo().window(list.get(index));
+		/*Set<String> sGetWindow=driver.getWindowHandles();
 		List<String> sGetWindowList=new ArrayList(sGetWindow);
 		sGetWindowList.addAll(sGetWindowList);
-		driver.switchTo().window(sGetWindowList.get(index));
+		driver.switchTo().window(sGetWindowList.get(index));*/
 					
 	}
 	

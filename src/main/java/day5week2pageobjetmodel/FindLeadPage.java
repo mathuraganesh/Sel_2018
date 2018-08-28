@@ -15,8 +15,11 @@ public class FindLeadPage extends Annotattion {
 	@FindBy(xpath="(//input[@name='firstName'])[3]")
 	WebElement eleEditFirstName;
 	
-	@FindBy(xpath="//button[text()='Find Leads']")
+	@FindBy(xpath="//a[text()='Find Leads']")
 	WebElement eleFindLead;
+	
+	@FindBy(xpath="//button[text()='Find Leads']")
+	WebElement eleFindLeadButton;
 	
 	@FindBy(xpath="(//a[@class='linktext'])[4]")
 	WebElement eleLeadID;
@@ -56,6 +59,13 @@ public class FindLeadPage extends Annotattion {
 	public FindLeadPage clickFindLeads() throws InterruptedException
 	{
 		click(eleFindLead);
+		Thread.sleep(1000);
+		return this;
+	}
+	
+	public FindLeadPage clickFindLeadButton() throws InterruptedException
+	{
+		click(eleFindLeadButton);
 		Thread.sleep(1000);
 		return this;
 	}

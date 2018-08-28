@@ -6,8 +6,8 @@
 	<parameter name="password" value="crmsfa"></parameter>
   <test thread-count="5" name="Test">
     <classes>
-  <!-- <class name="day5week2pageobjetmodel.TC001_CreateLead"/>
-       <class name="day5week2pageobjetmodel.TC001_CreateLeadNegative"/>
+  <!--<class name="day5week2pageobjetmodel.TC001_CreateLead"/>
+    	    <class name="day5week2pageobjetmodel.TC001_CreateLeadNegative"/>
       <class name="day5week2pageobjetmodel.TC001_EditLead"/>
       <class name="day5week2pageobjetmodel.TC001_DeleteLead"/>   -->
      <!--  <class name="day5week2pageobjetmodel.TC001_DuplicateLead"/>  -->  

@@ -24,26 +24,29 @@ public class MergeLeadPage extends Annotattion {
 	public String ParentWindow() {
 		return getParentWindow();
 	}
-	
-	public MergeLeadPage switchParentWindow(String window) {
-		switchToWindow(window);
-		return this;
-	}
+		
+	/*public MergePage switchwindow(int index) {
+		switchToWindow(index);
+		return new MergePage();
+	}  */
 	
 	public MergePage FirstLeadIDGrid() {
 		click(eleFirstLeadIdGrid);
+		switchToWindow(1);
+		System.out.println(driver.getTitle());
 		return new MergePage();
 	}
 	
 	public MergePage SecondLeadIDGrid() {
 		click(eleSecondLeadIdGrid);
+		switchToWindow(1);
 		return new MergePage();
 	}
 	
 	public MergeLeadPage MergeButton() throws InterruptedException {
 		click(eleMergeButton);
 		Thread.sleep(1000);
-		return new MergeLeadPage();
+		return this;
 	}
 	
 	public FindLeadPage AcceptAlert() throws InterruptedException {

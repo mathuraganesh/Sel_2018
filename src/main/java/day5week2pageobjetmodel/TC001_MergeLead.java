@@ -28,41 +28,42 @@ public class TC001_MergeLead extends Annotattion{
 		
 		new MyHomePage()
 		.clickLeads()
-		.clickMergeLeadLink();
-		MergeLeadPage parentwindow=new MergeLeadPage();
-		String MergeMainWindow=parentwindow.ParentWindow();
-		System.out.println(MergeMainWindow);
-		new MergeLeadPage()
+		.clickMergeLeadLink()
 		.FirstLeadIDGrid()
-		.switchwindow(1)
 		.typeLeadId(sLeadId1)
-		.clickFindLeads();
-		System.out.println("test");
-		MergePage fLeadId=new MergePage();
-		String FirstLeadId=fLeadId.getLeadId();
-		System.out.println("test1");
-		new MergePage()
-		.clickLeadLink();
-		System.out.println("test2");
-		MergeLeadPage parentwindow2=new MergeLeadPage();
-		String MergeMainWindow2=parentwindow2.ParentWindow();
-		System.out.println(MergeMainWindow2);
-		
-		new MergeLeadPage()
-		.switchParentWindow(MergeMainWindow)
+		.clickFindLeads()
+		.clickLeadLink()
 		.SecondLeadIDGrid()
-		.switchwindow(1)
 		.typeLeadId(sLeadId2)
 		.clickFindLeads()
 		.clickLeadLink();
-		new MergePage();
+		
+		
+		
+	/*	MergeLeadPage parentwindow=new MergeLeadPage();
+		String MergeMainWindow=parentwindow.ParentWindow();*/
+	/*		
 		new MergeLeadPage()
-		.switchParentWindow(MergeMainWindow)
+		.FirstLeadIDGrid()
+		.typeLeadId(sLeadId1)
+		.clickFindLeads();
+	
+		MergePage fLeadId=new MergePage();
+		String FirstLeadId=fLeadId.getLeadId();
+		
+		new MergePage()
+		.clickLeadLink()
+		.SecondLeadIDGrid()
+		.typeLeadId(sLeadId2)
+		.clickFindLeads()
+		.clickLeadLink();
+		*/
+		new MergeLeadPage()
 		.MergeButton()
 		.AcceptAlert()
 		.clickFindLeads()
-		.typeFirstLeadId(FirstLeadId)
-		.clickFindLeads()
+		.typeFirstLeadId(sLeadId1)
+		.clickFindLeadButton()
 		.verifyNoRecordDisplay();
 		
 		

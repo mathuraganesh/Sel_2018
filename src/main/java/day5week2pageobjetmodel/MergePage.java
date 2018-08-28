@@ -18,9 +18,10 @@ public class MergePage extends Annotattion {
 	@FindBy(xpath="//a[@class='linktext']")
 	WebElement eleLeadIdLink;
 	
-	public MergePage switchwindow(int index) {
-		switchToWindow(index);
-		return this;
+
+	public MergeLeadPage switchParentWindow(String window) {
+		switchToWindow(window);
+		return new MergeLeadPage();
 	}
 	
 	
@@ -42,7 +43,8 @@ public class MergePage extends Annotattion {
 	public MergeLeadPage clickLeadLink() throws InterruptedException {
 		click(eleLeadIdLink);
 		Thread.sleep(1000);
-		//System.out.println("LeadLink");
+		switchToWindow(0);
+		
 		return new MergeLeadPage();
 	}
 }

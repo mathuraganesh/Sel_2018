@@ -25,8 +25,9 @@ public class MyLeadsPage extends Annotattion {
 	
 	@FindBy(linkText="Merge Leads")
 	WebElement eleMergeLeads;
-	public MergeLeadPage clickMergeLeadLink() {
+	public MergeLeadPage clickMergeLeadLink() throws InterruptedException {
 		click(eleMergeLeads);
+		Thread.sleep(1000);
 		return new MergeLeadPage();
 	}
 

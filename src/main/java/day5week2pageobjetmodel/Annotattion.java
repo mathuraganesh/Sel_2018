@@ -50,7 +50,7 @@ public void startTest() {
 
 @AfterMethod
 	public void close() {
-		closeAllBrowsers();
+		//closeAllBrowsers();
 	
 	}
 @AfterSuite
